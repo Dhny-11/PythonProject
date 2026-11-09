@@ -90,3 +90,25 @@ del my_circle.radius # Deleting radius...
 print("Radius deleted!") # Radius deleted!
 
 
+
+print('\n')
+
+class animal:
+    def __init__(self,name):
+        self.name = name
+        
+    def sound(self):
+        return f'{self.name} make a sound'
+    
+
+class Dog(animal):
+    bark = 'Woof woof '
+    
+    
+    def sound(self):
+        base = super().sound()
+        return f'{base}, then {self.name} barks {self.bark}'
+    
+jack = Dog('Jack')
+print(jack.sound())
+#print(jack.bark)
