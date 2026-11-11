@@ -45,6 +45,15 @@ class GameCharacter:
         
 
 
+hero = GameCharacter('Kratos') # Creates a new character named Kratos
+print(hero)  # Displays the character's stats
+
+hero.health -= 30  # Decreases health by 30
+hero.mana -= 10    # Decreases mana by 10
+print(hero)  # Displays the updated stats
+
+hero.level_up()  # Levels up the character
+print(hero)  # Displays the stats after leveling up
 
 
 def main():
